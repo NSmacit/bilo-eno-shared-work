@@ -196,6 +196,28 @@ header ul li:hover > ul {
   box-sizing: border-box;
 }
 
+.slider-wrapper .slide-button {
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  border: none;
+  outline: none;
+  background: #000;
+  font-size: 2.rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.slide-wrapper .slide-button#prev-slide {
+  left: -20px;
+}
+.slide-wrapper .slide-button#next-slide {
+  right: -20px;
+}
+
 .slider-wrapper .image-list {
   display: grid;
   gap: 18px;
@@ -218,10 +240,16 @@ header ul li:hover > ul {
 
 .container {
   max-width: 1200px;
-  width: 95%;
+  width: 90%;
+  padding: 0 10px;
+
 }
 
-.slider-wrapper .fa-solid{
+.slide-wrapper {
+  position: relative;
+}
+
+.slider-wrapper .slide-button{
   position: absolute;
   top: 50%;
 
@@ -236,6 +264,12 @@ header ul li:hover > ul {
   transform: translateY(-50%);
 
 }
+
+.slider-wrapper .slide-button:hover {
+  background: #444;
+
+}
+
 .slider-wrapper .fa-solid#prev-slider{
   left: -20px;
 }
